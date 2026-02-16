@@ -31,7 +31,7 @@ export function TextReveal({ text, className = '', delay = 0 }: TextRevealProps)
       opacity: 1,
       y: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         damping: 12,
         stiffness: 100,
       },
